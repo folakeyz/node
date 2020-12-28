@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const port = process.env.PORT || 8001;
 const cors = require("cors")
 const mongoose = require("mongoose");
 
@@ -22,6 +23,6 @@ app.get("/", (req, res) =>
 res.status(200).send("Hello World") 
 );
 
-app.listen(8001, ()=>{
-    console.log("running on port 3001");
+app.listen(port, ()=>{
+    console.log(`running on port ${port}`);
 }); 
