@@ -9,10 +9,10 @@ const cors = require("cors")
 app.use(cors());
 app.use(express.json())
  const db = mysql.createPool({
-     host: "hraprotal.db.9145261.566.hostedresource.net",
-     user: "hraprotal",
-     password: "password@1L",
-     database: "hraprotal"
+     host: "localhost",
+     user: "icodesco_hra",
+     password: "!Password@1",
+     database: "icodesco_hra"
  });
 
  //get staffs/employees data
